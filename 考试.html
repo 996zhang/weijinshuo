@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table{
+           width: 600px;
+        }
+      .left{
+          background-color: blueviolet;
+      }
+      
+    
+    </style>
+</head>
+<body>
+        <div>请输入姓名:<input type="text" value id="name"></div>
+        <div>请输入邮箱:<input type="text" value id="email"></div>    
+        <div> 请输入手机:<input type="text" value id="phone"> </div>
+        <div>请输入地址:<input type="text" value id="id"> </div>
+        <button>添加</button> 
+        <div>
+            
+                <table class="table"  border="1" cellspacing="0" cellpadding="0">
+                    <tr align="center" class="left">
+                        <td class="one" >姓名</td>
+                        <td class="two">邮箱</td>
+                        <td class="two">手机</td>
+                        <td class="four">地址</td>
+                    </tr>
+                    <tr  align="center">
+                        <td class="five">小黑</td>
+                        <td class="two">xiaohei@126.com</td>
+                        <td class="two">19999009090</td>
+                        <td class="ten">北京</td>
+                    </tr>
+                    
+                </table>
+          
+        </div>
+      <script>
+          var name= document.getElementById('name');
+          var phone= document.getElementById('phone');
+          var email= document.getElementById('email');
+          var id= document.getElementById('id');
+          var button = document.getElementsByTagName('button')[0];
+         
+                button.onclick=function(){
+                    for(var i=0; i<inputList.length ; i++){
+                        if(inputList[i].value.length==0){
+                             alert("你好");
+                   };
+                };
+            };
+      </script>
+</body>
+</html>
